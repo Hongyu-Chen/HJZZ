@@ -1,0 +1,81 @@
+//
+//  PrefixHeader.pch
+//  呼叫战神
+//
+//  Created by apple on 2019/2/25.
+//  Copyright © 2019 apple. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//pod 'QMUIKit'
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Masonry.h>
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <UIImage+GIF.h>
+#import "MJRefresh.h"
+#import "QMUIKit.h"
+#import "SPPageMenu.h"
+#import "TZImagePickerController.h"
+#import <BANetManager/BANetManager.h>
+#import <BANetManager/BADataEntity.h>
+#import <YYCache/YYCache.h>
+#import "NSString+MD5.h"
+#import "NSObject+NetWork.h"
+#import "YYCacheManager.h"
+#import "NSString+Authentication.h"
+#import "NSDictionary+JSON.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <MJExtension/MJExtension.h>
+#import "AliPay/AlipaySDK.framework/Headers/AlipaySDK.h"
+#import <Hyphenate/Hyphenate.h>
+#import <EaseUI.h>
+#import "WXApi.h"//微信
+#import <TencentOpenAPI/TencentOAuth.h>//QQ
+#import <TencentOpenAPI/QQApiInterface.h>//QQ
+
+#import "LabelCreat.h"
+#import "ProjectTool.h"
+#import "TheCountdown.h"
+#import "FormatLabel.h"
+#import "CHYTextField.h"
+#import "ProjectHeader.h"
+#import "QQTool.h"
+#import "WeChatTool.h"
+#import "EMUserInfo.h"
+#import "ChatViewController.h"
+#import "MessageListViewController.h"
+#import "UserOderCommModel.h"
+
+// 空值判断
+#define IsNullObject(obj) (obj == nil || obj == Nil || obj == NULL || [obj isKindOfClass:[NSNull class]] || ![obj isKindOfClass:[NSObject class]])
+
+#define IsNullString(str) (IsNullObject(str) || ![str isKindOfClass:[NSString class]] || [str length] == 0 || [str isEqualToString:@"(null)"] || [str isEqualToString:@"null"])
+
+#define SETURLWITHUSERSTRING(a) [NSURL URLWithString:[a stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]]]
+
+#define WECHATAPPID @"wx1adaf129c58fdce9"
+#define WECHATSECRTY @"936aaf38d458b99ac03899ecaa832c38"
+
+#define QQAPPID @"101569534"
+#define QQAPPKEY @"40a198b2e323682eae07fcaed0de3a5b"
+
+#define WX_NOTICE_NAME @"weixinLoginSuccess"
+#define WB_NOTICE_NAME @"weiboLoginSuccess"
+#define QQ_NOTICE_NAME @"qqLoginSuccess"
+
+#define WX_PAY_STATE @"wechatPay"
+#define AL_IPAY_STATE @"aliPay"
+
+#define SYSTEMCONFIG @"systemConfig"
+
+#import "ProjectHeader.h"
+#define VOICETYPE @"voicType"
+
+#endif /* PrefixHeader_pch */

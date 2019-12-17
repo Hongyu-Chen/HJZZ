@@ -1,0 +1,27 @@
+
+platform :ios, '9.0'
+
+target 'HJZSU' do
+
+pod 'SDWebImage'
+pod 'QMUIKit'
+#pod 'SDWebImage/GIF'
+pod 'AFNetworking'
+pod 'Masonry'
+#pod 'MJRefresh'
+pod 'SDCycleScrollView'
+pod 'IQKeyboardManager'
+pod 'SPPageMenu'
+pod 'TZImagePickerController'
+pod 'BANetManager'
+pod 'YYCache'
+pod 'AMapLocation'
+pod 'MJExtension'
+pod 'Hyphenate'
+pod 'Bugly'
+#pod 'MBProgressHUD'
+pod 'FLAnimatedImage'
+pod 'EaseUI', :git => 'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git'
+pod 'WechatOpenSDK'
+pod 'TencentOpenApiSDK'
+end
